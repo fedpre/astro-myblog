@@ -4,6 +4,7 @@ import { HOMEPAGE_URL } from '../config'
 import { IoLogoGithub } from 'react-icons/io5/index.js'
 import FootprintIcon from './icons/footprint'
 import ThemeToggle from './ThemeToggleButton'
+import FootprintIcon from './icons/footprint'
 ---
 
 <header class="fixed w-full p-2 z-20 backdrop-blur-md">
@@ -13,7 +14,7 @@ import ThemeToggle from './ThemeToggleButton'
         <h2
           class="font-semibold tracking-tighter p-2 font-mplus text-lg flex items-center gap-2"
         >
-          <img src="../../images/footprint.png" class="w-5 h-5 -rotate-12" />
+          <FootprintIcon />
           Federico Pregnolato
         </h2>
       </a>
@@ -24,7 +25,7 @@ import ThemeToggle from './ThemeToggleButton'
         >
       </div>
       <div class="flex-1"></div>
-      <ThemeToggle client:load/>
+      <ThemeToggle client:load />
     </nav>
   </div>
 </header>
