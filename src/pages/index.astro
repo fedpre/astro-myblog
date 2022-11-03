@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
 import Content from '../components/Content.astro'
+import Masthead from '../components/Masthead.astro'
 import { SITE_TITLE, SITE_DESCRIPTION, HOMEPAGE_URL } from '../config'
 import Body from '../components/Body.astro'
 import { IoArrowForward } from 'react-icons/io5/index.js'
@@ -16,6 +17,7 @@ import { IoArrowForward } from 'react-icons/io5/index.js'
   <Body>
     <Header title={SITE_TITLE} />
     <main class="pt-[56px]">
+      <Masthead />
       <h1 class="font-mplus text-center">WDD330 - Homepage</h1>
       <Content>
         <section>
