@@ -1,5 +1,5 @@
 {
-  "name": "fedpre-wdd330",
+  "name": "FedeBlog",
   "type": "module",
   "version": "0.0.1",
   "private": true,
@@ -22,6 +22,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.6.0",
+    "sharp": "^0.31.2",
     "tailwindcss": "^3.2.1"
   },
   "devDependencies": {

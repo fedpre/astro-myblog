@@ -9,12 +9,12 @@ module.exports = {
         mplus: ["'M PLUS Rounded 1c'", 'Verdana', 'sans-serif']
       },
       animation: {
-        wiggle: 'wiggle 200ms ease-in-out forwards'
+        wiggle: 'wiggle 3s ease-in-out infinite'
       },
       keyframes: {
         wiggle: {
-          '0%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(-20deg)' }
+          '0%': { transform: 'rotate(-30deg)' }
+          '0%, 100%': { transform: 'rotate(-30deg)' }
         }
       }
     }

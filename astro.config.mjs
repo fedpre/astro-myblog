@@ -6,6 +6,13 @@ import tailwind from '@astrojs/tailwind'
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://fedpre.github.io/wdd330-frontend-dev-II/',
-  integrations: [sitemap(), react(), image(), tailwind()]
+  site: 'https://fedpregnolato.io',
+  integrations: [
+    sitemap(),
+    react(),
+    image({
+      serviceEntryPoint: '@astrojs/image/sharp'
+    }),
+    tailwind()
+  ]
 })

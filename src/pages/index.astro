@@ -7,6 +7,7 @@ import Masthead from '../components/Masthead.astro'
 import { SITE_TITLE, SITE_DESCRIPTION, HOMEPAGE_URL } from '../config'
 import Body from '../components/Body.astro'
 import { IoArrowForward } from 'react-icons/io5/index.js'
+import { Image } from '@astrojs/image/components'
 
 const posts = (await Astro.glob('./posts/*.md')).sort(
   (a: any, b: any) =>
@@ -24,13 +25,12 @@ const posts = (await Astro.glob('./posts/*.md')).sort(
     <Header title={SITE_TITLE} />
     <main class="pt-[56px]">
       <Masthead />
-      <h1 class="font-mplus text-center">WDD330 - Homepage</h1>
+      <h1 class="font-mplus text-center">Fede's Blog</h1>
       <Content>
         <section>
           <p class="mb-8 indent-4">
-            Welcome to my WDD330 Frontend Development portal! Here you can find
-            all my notes, assignments, and projects that I have developed for
-            this class. Feel free to poke around and see what I created!
+            Welcome to my blog! I write about tech, dev, travel, productivity,
+            and how to live a better, healthier life.
             <a
               class="inline-flex items-center gap-1 indent-1 text-orange-500"
               href={HOMEPAGE_URL}
@@ -46,6 +46,13 @@ const posts = (await Astro.glob('./posts/*.md')).sort(
                 posts.map(post => (
                   <li class="text-center mb-4">
                     <a href={post.url}>
+                      <Image
+                        class="border border-slate-300 dark:border-zinc-700 rounded-xl"
+                        src={post.frontmatter.heroImage}
+                        width={720 * 2}
+                        aspectRatio={2.0}
+                        alt="thumbnail"
+                      />
                       <div class="mt-3 text-xl">{post.frontmatter.title}</div>
                       <div class="opacity-70">
                         {post.frontmatter.description}
