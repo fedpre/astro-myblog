@@ -5,6 +5,7 @@ import { IoLogoGithub } from 'react-icons/io5/index.js'
 import FootprintIcon from './icons/footprint'
 import ThemeToggle from './ThemeToggleButton'
 import FootprintIcon from './icons/footprint'
+import DropdownMenu from './DropDownMenu'
 ---
 
 <header class="fixed w-full p-2 z-20 backdrop-blur-md">
@@ -12,7 +13,7 @@ import FootprintIcon from './icons/footprint'
     <nav class="flex items-center gap-3 text-base">
       <a href="/" class="group">
         <h2
-          class=" font-semibold tracking-tighter p-2 font-mplus text-lg flex items-center gap-2"
+          class="font-semibold tracking-tighter p-2 font-mplus text-lg flex items-center gap-2"
         >
           <FootprintIcon />
           Federico Pregnolato
@@ -25,7 +26,8 @@ import FootprintIcon from './icons/footprint'
         >
       </div>
       <div class="flex-1"></div>
-      <ThemeToggle client:load />
+      <ThemeToggle client:visible />
+      <DropdownMenu client:visible />
     </nav>
   </div>
 </header>
