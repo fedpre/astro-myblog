@@ -29,9 +29,15 @@ export default function DropdownMenu() {
               Categories
             </div>
           </div>
-          <DropdownMenuItem href="/">Web Development</DropdownMenuItem>
-          <DropdownMenuItem href="/">Computer Science</DropdownMenuItem>
-          <DropdownMenuItem href="/">Productivity</DropdownMenuItem>
+          <DropdownMenuItem href="/categories/webdev">
+            Web Development
+          </DropdownMenuItem>
+          <DropdownMenuItem href="/categories/cs">
+            Computer Science
+          </DropdownMenuItem>
+          <DropdownMenuItem href="/categories/prod">
+            Productivity
+          </DropdownMenuItem>
         </Menu.Items>
       </Transition>
     </Menu>
